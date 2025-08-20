@@ -17,7 +17,7 @@ AXON Mind is a cross-platform AI assistant built with Flutter, Dart, Riverpod, M
 
 ## Screenshots
 Add your screenshots below for:
-- Splash Screen
+- Splash Screen 
 - Home Screen
 - Menu
 - Chat Screen
@@ -25,11 +25,11 @@ Add your screenshots below for:
 
 ```
 # Example:
-# ![Splash Screen](assets/images/splash_ss.png)
-# ![Home Screen](assets/images/home_ss.png)
-# ![Menu](assets/images/menu_ss.png)
-# ![Chat Screen](assets/images/chat_ss.png)
-# ![Settings Screen](assets/images/settings_ss.png)
+# ![alt text](image.png)
+# !![alt text](image-1.png)
+# !![alt text](image-2.png)
+# !![alt text](image-3.png)
+# !![![![alt text](image-6.png)](image-5.png)](image-4.png)
 ```
 
 ## Getting Started
