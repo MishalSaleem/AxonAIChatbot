@@ -25,7 +25,6 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen>
   late AnimationController _floatController;
   late ScrollController _scrollController;
 
-  // Animation preference state
   bool _animationsEnabled = true;
   AnimationStyle _animationStyle = AnimationStyle.gentle;
 
@@ -143,7 +142,6 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen>
       backgroundColor: AppColors.deepSpace,
       body: Stack(
         children: [
-          // Subtle animated background
           AnimatedBuilder(
             animation: _backgroundController,
             builder: (context, child) => CustomPaint(
@@ -202,7 +200,6 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen>
             },
           ),
           const SizedBox(width: 16),
-          // Floating logo with gentle glow
           AnimatedBuilder(
             animation: _glowController,
             builder: (context, child) {
@@ -501,7 +498,8 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen>
                   ),
                 ),
               ),
-              const Icon(Icons.auto_awesome, color: AppColors.etherealPink, size: 16),
+              const Icon(Icons.auto_awesome,
+                  color: AppColors.etherealPink, size: 16),
             ],
           ),
         ),
@@ -924,7 +922,6 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen>
       ),
     );
 
-    // Apply animations based on user preference
     if (_animationsEnabled) {
       if (_animationStyle == AnimationStyle.gentle) {
         card = card
@@ -1018,7 +1015,6 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen>
   }
 }
 
-// Custom Widgets
 class _CrystalButton extends StatelessWidget {
   final VoidCallback onPressed;
   final Widget child;
@@ -1148,7 +1144,6 @@ class _CrystalDialog extends StatelessWidget {
   }
 }
 
-// Custom Painter for Settings Background
 class SettingsBackgroundPainter extends CustomPainter {
   final double animationValue;
   final bool animationsEnabled;
@@ -1158,7 +1153,6 @@ class SettingsBackgroundPainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    // Subtle gradient background
     final backgroundPaint = Paint()
       ..shader =
           ui.Gradient.linear(Offset.zero, Offset(size.width, size.height), [
@@ -1177,7 +1171,6 @@ class SettingsBackgroundPainter extends CustomPainter {
 
     if (!animationsEnabled) return;
 
-    // Subtle floating shapes
     final shapePaint = Paint()..style = PaintingStyle.fill;
     final random = math.Random(789);
 
@@ -1198,7 +1191,6 @@ class SettingsBackgroundPainter extends CustomPainter {
       final centerY = y;
       final radius = shapeSize / 2;
 
-      // Create hexagon shape
       for (int j = 0; j < 6; j++) {
         final angle = (j * 60) * math.pi / 180;
         final pointX = centerX + radius * math.cos(angle);
@@ -1224,7 +1216,6 @@ class SettingsBackgroundPainter extends CustomPainter {
       canvas.drawPath(path, shapePaint);
     }
 
-    // Subtle stars
     final starPaint = Paint();
     for (int i = 0; i < 30; i++) {
       final x = random.nextDouble() * size.width;
@@ -1242,7 +1233,6 @@ class SettingsBackgroundPainter extends CustomPainter {
   bool shouldRepaint(covariant CustomPainter oldDelegate) => true;
 }
 
-// Animation style enum
 enum AnimationStyle {
   gentle,
   dynamic,

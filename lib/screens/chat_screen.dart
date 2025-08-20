@@ -1,4 +1,3 @@
-// lib/screens/chat_screen.dart
 import 'dart:async';
 import 'dart:math' as math;
 import 'dart:ui' as ui;
@@ -670,19 +669,16 @@ class _ChatScreenState extends ConsumerState<ChatScreen>
     return AnimatedBuilder(
       animation: _sidebarController,
       builder: (context, child) {
-        // Calculate sidebar width with a minimum value to prevent overflow
         final sidebarWidth = _sidebarController.value * 320;
 
-        // Only render sidebar content if there's enough width
         if (sidebarWidth < 10) {
           return const SizedBox.shrink();
         }
 
         return SizedBox(
           width: sidebarWidth,
-          // Use OverflowBox to ensure content doesn't overflow during animation
           child: OverflowBox(
-            maxWidth: 320, // Maximum width when fully open
+            maxWidth: 320,
             child: ClipRect(
               child: BackdropFilter(
                 filter: ui.ImageFilter.blur(sigmaX: 20, sigmaY: 20),
