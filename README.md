@@ -9,27 +9,31 @@ AXON Mind is a cross-platform AI assistant built with Flutter, Dart, Riverpod, M
 - **Animated UI:** Moving logo PNG, glowing effects, and smooth transitions for a visually stunning experience.
 - **Aesthetic Screens:** Beautiful splash, home, chat, and settings screens with modern design.
 - **Responsive Design:** Optimized for mobile, tablet, desktop, and web.
-- **Voice, Image, and Text Support:** Rich interactions with voice recording, image analysis, and text chat.
+- **Text Support:** Rich interactions with text chat.
 - **Modular Widgets & Clean Code:** Easy to maintain and extend.
-- **Theme Toggle:** Switch between dark and light modes.
 - **Advanced Customization:** Personalize your experience with settings and appearance options.
 - **Error Handling & Loading States:** Robust and user-friendly.
 
 ## Screenshots
 Add your screenshots below for:
 - Splash Screen 
+<img width="1919" height="909" alt="Screenshot 2025-08-20 235455" src="https://github.com/user-attachments/assets/633003b7-b1ea-47b8-b8d8-21a3177e1707" />
+
 - Home Screen
+<img width="1919" height="906" alt="Screenshot 2025-08-20 235530" src="https://github.com/user-attachments/assets/f4526505-5b1a-4c2b-8b42-0df80e0979e6" />
+
 - Menu
+<img width="1918" height="906" alt="Screenshot 2025-08-20 235602" src="https://github.com/user-attachments/assets/f83e537a-c652-4227-8abd-b7bffaf8607d" />
+
 - Chat Screen
+<img width="1919" height="913" alt="Screenshot 2025-08-20 235700" src="https://github.com/user-attachments/assets/ee6e7cee-d189-4ed9-849c-b1c11cc6183f" />
+
 - Settings Screen
+<img width="1919" height="904" alt="Screenshot 2025-08-20 235757" src="https://github.com/user-attachments/assets/2852e26c-812d-4465-a42a-45006aec643d" />
+
 
 ```
-# Example:
-# ![alt text](image.png)
-# !![alt text](image-1.png)
-# !![alt text](image-2.png)
-# !![alt text](image-3.png)
-# !![![![alt text](image-6.png)](image-5.png)](image-4.png)
+
 ```
 
 ## Getting Started
