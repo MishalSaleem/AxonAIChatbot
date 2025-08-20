@@ -198,12 +198,12 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
                     ),
                   )
                       .animate()
-                      .fadeIn(delay: 600.ms, duration: 600.ms) // Optimized
+                      .fadeIn(delay: 600.ms, duration: 600.ms) 
                       .slideY(begin: 0.5),
                 ],
               ),
             ),
-            // --- The "Crystal Shatter" Menu ---
+            
             _CrystalMenuButton(onTap: _toggleMenu),
             if (_isMenuVisible)
               _CrystalShatterMenu(
@@ -231,8 +231,8 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
         return Animate(
           effects: const [
             FadeEffect(
-                duration: Duration(milliseconds: 600), // Optimized
-                delay: Duration(milliseconds: 500)) // Optimized
+                duration: Duration(milliseconds: 600), 
+                delay: Duration(milliseconds: 500)) 
           ],
           child: Transform(
             alignment: Alignment.center,
@@ -240,7 +240,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
             child: Stack(
               alignment: Alignment.center,
               children: [
-                // Crystal glow effect - reduced brightness
+                
                 AnimatedBuilder(
                   animation: _controller,
                   builder: (context, child) {
@@ -250,7 +250,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
                     );
                   },
                 ),
-                // Interactive character with ripple effect
+                
                 GestureDetector(
                   onTap: _handleCharacterTap,
                   child: Hero(
